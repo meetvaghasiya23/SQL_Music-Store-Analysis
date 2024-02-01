@@ -132,10 +132,10 @@ Write a query that returns the country along with the top customer and how much 
 For countries where the top amount spent is shared, provide all customers who spent this amount. */
 
 WITH Customer_with_country AS (
-		SELECT customer.customer_id,first_name,last_name,billing_country,SUM(total) AS total_spending,
-	    ROW_NUMBER() OVER(PARTITION BY billing_country ORDER BY SUM(total) DESC) AS RowNo 
-		FROM invoice
-		JOIN customer ON customer.customer_id = invoice.customer_id
+		SELECT c.customer_id,c.first_name,c.last_name,inv.billing_country,SUM(inv.total) AS total_spending,
+	    RANK() OVER(PARTITION BY inv.billing_country ORDER BY SUM(inv.total) DESC) AS Rank 
+		FROM customer c
+		JOIN invoice inv ON inv.customer_id = c.customer_id
 		GROUP BY 1,4
-		ORDER BY 4 ASC,5 DESC)
-SELECT * FROM Customer_with_country WHERE RowNo <= 1
+		ORDER BY inv.billing_country)
+SELECT * FROM Customer_with_country WHERE Rank<=1 ORDER BY billing_country
