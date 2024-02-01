@@ -76,5 +76,5 @@ Hey there, this is my SQL Data Analysis Project, named Music Store Analysis. The
 
 ### Reference
 
-Rishab Mishra, Senior Data Analyst
+Rishabh Mishra, Senior Data Analyst
 [Youtube](https://www.youtube.com/@RishabhMishraOfficial)
