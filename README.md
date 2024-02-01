@@ -6,17 +6,25 @@ Hey there, this is my SQL Data Analysis Project, named Music Store Analysis. The
 
 ### Database_tables:
 
-1) artist
-2) album
-3) track
-4) MediaType
-5) Genre
-6) PlaylistTracker
-7) Playlist
-8) InvoiceLine
-9) Invoice
-10) Customer
-11) Employee
+1) album
+2) artist
+3) customer
+4) employee
+5) genre
+6) invoice
+7) invoice_line
+8) media_type
+9) playlist
+10) playlist_track
+11) track
+
+### Database and Tool Used:
+
+* PostgreSQL
+* pdAdmin4
+
+### Schema Diagram
+![MusicDatabaseSchema](https://github.com/meetvaghasiya23/SQL_Music-Store-Analysis/blob/7f6405b49b004e25c7429e1e2044124a7d0c7a2d/Schema_Diagram.png)
 
 ### Question Set
 
@@ -42,15 +50,29 @@ Hey there, this is my SQL Data Analysis Project, named Music Store Analysis. The
 
 11. Write a query that determines the customer that has spent the most on music for each country. Write a query that returns the country along with the top customer and how much they spent. For countries where the top amount spent is shared, provide all customers who spent this amount
 
-### Database and Tool Used:
+### Conclusion
 
-* Postgre SQL
-* pdAdmin4
+#### Findings
+-	Identify the senior most employees based on their job title.
+-	Determine the countries with the highest number of invoices.
+-	Identify the top three values of total invoices.
+-	Analyse the city with the most valuable customers and highest revenue and display the city name along with the sum of all invoice totals.
+-	Identify the genre of all rock music listeners.
+-	Determine the artist who has written the most rock music in the dataset.
+-	Analyse the track names that exceed the average song length.
+-	Determine the amount spent by each customer on artists.
+-	Analyse the most popular genre for each country
+-	Determine the customers who have spent the most on music in each country.
+-	Provide a list of the top customers and their spending
 
-### Schema_table
-![MusicDatabaseSchema](https://github.com/meetvaghasiya23/SQL_Music-Store-Analysis/blob/7f6405b49b004e25c7429e1e2044124a7d0c7a2d/Schema_Diagram.png)
+#### Insights Gained
+-	Mohan Madan is the most senior employee based on the job title.
+-	USA, Canada, and Brazil are the countries with the most invoices.
+-	The top 3 values of total invoices are: 23.76, 19.8, 19.8
+-	Prague has the best customers and has the highest sum of invoice totals.
+-	R Madhav is the best customer because he spends the most money.
+-	The most popular genre in Argentina is Alternative & Punk and for Australia, Austria, Belgium, Canada, etc is Rock.
 
-### Thanks for exploring the Project
 
 ### Reference
 
