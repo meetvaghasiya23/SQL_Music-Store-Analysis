@@ -71,10 +71,7 @@ Hey there, this is my SQL Data Analysis Project, named Music Store Analysis. The
 -	The top 3 values of total invoices are: 23.76, 19.8, 19.8
 -	Prague has the best customers and has the highest sum of invoice totals.
 -	R Madhav is the best customer because he spends the most money.
--	The most popular genre in Argentina is Alternative & Punk and for Australia, Austria, Belgium, Canada, etc is Rock.
+-	The most popular genre in Argentina is Alternative & Punk and in Australia, Austria, Belgium, Canada, etc is Rock.
 
 
-### Reference
 
-Rishabh Mishra, Senior Data Analyst
-[Youtube](https://www.youtube.com/@RishabhMishraOfficial)
